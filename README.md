@@ -36,3 +36,7 @@ CableReady.configure do |config|
   config.add_operation_name :alpine_morph
 end
 ```
+
+### Known Issues
+
+* Just works for selector morphs (Alpine doesn't like to morph the whole body element, which is used in page morphs)
