@@ -1,12 +1,12 @@
 import { Utils } from 'cable_ready'
+import Alpine from 'alpinejs'
+import morph from '@alpinejs/morph'
 
 if (!window.Alpine) {
-  import Alpine from 'alpinejs'
   window.Alpine = Alpine
 }
 
 if (!window.Alpine.morph) {
-  import morph from '@alpinejs/morph'
   window.Alpine.plugin(morph)
 }
 
@@ -37,7 +37,7 @@ export default {
 
         const newHtml = childrenOnly ? template.content : template.innerHTML
 
-        Alpine.morph(element, newHtml, options)
+        window.Alpine.morph(element, newHtml, options)
 
         assignFocus(focusSelector)
       })
