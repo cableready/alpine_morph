@@ -1,0 +1,19 @@
+name: Prettier-Standard
+
+on: [pull_request, push]
+
+jobs:
+  prettier:
+    name: Prettier-Standard Check Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          version: '12.x'
+
+      - run: yarn
+
+      - run: yarn lint

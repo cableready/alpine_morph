@@ -1,0 +1,29 @@
+{
+  "name": "@cable_ready/alpine_morph",
+  "version": "5.0.0-pre9",
+  "description": "CableReady Alpine Morph Operation",
+  "repository": "https://github.com/cableready/alpine_morph",
+  "homepage": "https://cableready.stimulusreflex.com/",
+  "bugs": "https://github.com/cableready/alpine_morph/issues",
+  "license": "MIT",
+  "author": "Marco Roth <marco.roth@hey.com>",
+  "source": "./index.js",
+  "main": "./index.js",
+  "scripts": {
+    "lint": "yarn run prettier-standard:check",
+    "format": "yarn run prettier-standard:format",
+    "prettier-standard:check": "yarn run prettier-standard --check *.js **/*.js",
+    "prettier-standard:format": "yarn run prettier-standard *.js **/*.js"
+  },
+  "peerDependencies": {
+    "@alpinejs/morph": "^3.10.3",
+    "alpinejs": "^3.10.3",
+    "cable_ready": ">= 5.0.0-pre9 <6"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

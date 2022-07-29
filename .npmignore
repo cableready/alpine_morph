@@ -1,0 +1,10 @@
+.gitbook
+.gitbook.yml
+.github
+.tool-versions
+assets
+bin
+docs
+lib
+pkg
+tags
