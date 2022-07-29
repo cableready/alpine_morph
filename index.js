@@ -10,7 +10,15 @@ if (!window.Alpine.morph) {
   window.Alpine.plugin(morph)
 }
 
-const { dispatch, before, operate, after, processElements, safeScalar, assignFocus } = Utils
+const {
+  dispatch,
+  before,
+  operate,
+  after,
+  processElements,
+  safeScalar,
+  assignFocus
+} = Utils
 
 export default {
   alpineMorph: operation => {
@@ -30,7 +38,7 @@ export default {
         const { childrenOnly, focusSelector } = operation
 
         const options = {
-          updating(element, toElement, childrenOnlyFn, skip) {
+          updating (element, toElement, childrenOnlyFn, skip) {
             if (childrenOnly) {
               childrenOnlyFn()
             }
@@ -38,15 +46,15 @@ export default {
             // shouldMorph(operation)
           },
 
-          updated(element, toElement) {
+          updated (element, toElement) {
             // didMorph(operation)
           },
 
-          removing(element, skip) {},
-          removed(element) {},
+          removing (element, skip) {},
+          removed (element) {},
 
-          adding(element, skip) {},
-          added(element) {},
+          adding (element, skip) {},
+          added (element) {}
         }
 
         const newHtml = childrenOnly ? template.content : template.innerHTML
