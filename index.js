@@ -30,9 +30,23 @@ export default {
         const { childrenOnly, focusSelector } = operation
 
         const options = {
-          // childrenOnly: !!childrenOnly,
-          // onBeforeElUpdated: shouldMorph(operation),
-          // onElUpdated: didMorph(operation)
+          updating(element, toElement, childrenOnlyFn, skip) {
+            if (childrenOnly) {
+              childrenOnlyFn()
+            }
+
+            // shouldMorph(operation)
+          },
+
+          updated(element, toElement) {
+            // didMorph(operation)
+          },
+
+          removing(element, skip) {},
+          removed(element) {},
+
+          adding(element, skip) {},
+          added(element) {},
         }
 
         const newHtml = childrenOnly ? template.content : template.innerHTML
