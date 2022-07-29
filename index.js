@@ -10,7 +10,7 @@ if (!window.Alpine.morph) {
   window.Alpine.plugin(morph)
 }
 
-const { dispatch, before, operate, after, processElements } = Utils
+const { dispatch, before, operate, after, processElements, safeScalar, assignFocus } = Utils
 
 export default {
   alpineMorph: operation => {
