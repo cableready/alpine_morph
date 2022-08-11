@@ -23,12 +23,7 @@ const {
 export default {
   alpineMorph: operation => {
     processElements(operation, element => {
-      const { html } = operation
-      const template = document.createElement('template')
-
-      template.innerHTML = String(safeScalar(html)).trim()
-      operation.content = template.content
-
+      const { html, outerHtml } = operation
       const parent = element.parentElement
       const ordinal = Array.from(parent.children).indexOf(element)
 
@@ -39,10 +34,9 @@ export default {
 
         const options = {
           updating (element, toElement, childrenOnlyFn, skip) {
-            if (childrenOnly) {
-              childrenOnlyFn()
-            }
-
+            // if (childrenOnly) {
+            //   childrenOnlyFn()
+            // }
             // shouldMorph(operation)
           },
 
@@ -57,9 +51,8 @@ export default {
           added (element) {}
         }
 
-        const newHtml = childrenOnly ? template.content : template.innerHTML
-
-        window.Alpine.morph(element, newHtml, options)
+        const newHtml = childrenOnly ? html : outerHtml
+        window.Alpine.morph(element, outerHtml)
 
         assignFocus(focusSelector)
       })
