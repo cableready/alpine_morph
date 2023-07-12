@@ -1,6 +1,6 @@
 {
   "name": "@cable_ready/alpine_morph",
-  "version": "5.0.0-pre9",
+  "version": "5.0.0",
   "description": "CableReady Alpine Morph Operation",
   "repository": "https://github.com/cableready/alpine_morph",
   "homepage": "https://cableready.stimulusreflex.com/",
