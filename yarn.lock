@@ -324,11 +324,12 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-"cable_ready@https://github.com/cableready/dev-builds/archive/refs/tags/cable_ready/3f01690.tar.gz":
-  version "5.0.0-pre9"
-  resolved "https://github.com/cableready/dev-builds/archive/refs/tags/cable_ready/3f01690.tar.gz#0e3fbbe94522ca8790e3b71c1524a440b032c794"
+cable_ready@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-5.0.1.tgz#1cef5991cf7a064d09971ed7d87c614dec2ee1e1"
+  integrity sha512-+t9rKTgYwW5XBx113y97qC8MNEtBZZL84Isdec23HWvjMx0icOQsMzHJE75ycjevgjACTeWZqjRcCdtCHxgZ9g==
   dependencies:
-    morphdom "^2.6.1"
+    morphdom "2.6.1"
 
 caller-callsite@^2.0.0:
   version "2.0.0"
@@ -1563,7 +1564,7 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-morphdom@^2.6.1:
+morphdom@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.6.1.tgz#e868e24f989fa3183004b159aed643e628b4306e"
   integrity sha512-Y8YRbAEP3eKykroIBWrjcfMw7mmwJfjhqdpSvoqinu8Y702nAwikpXcNFDiIkyvfCLxLM9Wu95RZqo4a9jFBaA==

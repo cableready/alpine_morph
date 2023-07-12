@@ -18,7 +18,7 @@
   "dependencies": {
     "@alpinejs/morph": "^3.10.3",
     "alpinejs": "^3.10.3",
-    "cable_ready": "https://github.com/cableready/dev-builds/archive/refs/tags/cable_ready/3f01690.tar.gz"
+    "cable_ready": "^5.0.0"
   },
   "devDependencies": {
     "prettier-standard": "^16.4.1"
